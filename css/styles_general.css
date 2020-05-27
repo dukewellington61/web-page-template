@@ -1,0 +1,683 @@
+
+/*Body*/
+
+body {
+  background-color: #fffeea;
+  background-size: cover;
+  color: #34495e;
+}
+
+/*Navbar*/
+
+.navbar-dark {
+  opacity: 0.5;
+}
+
+.nav-link {
+  font-size: 1.25em;
+  font-weight: bold;
+  font-family: Concert One, Helvetica, Arial, sans-serif;
+}
+ 
+.navbar-brand {
+ text-transform: uppercase;
+}
+
+/*CONTACT & FAQ Header*/
+
+.container-content {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.container-content h1 {
+  font-family: Concert One, Helvetica, Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.container-content h2 {
+  font-family: Concert One, Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+/*INDEX*/
+
+/*Index Carousel*/
+
+.d-block {
+  margin: 0 auto; 
+  width: auto;
+  max-width: 950px; 
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color:black;
+  height: 50px;
+}
+
+.container-carousel {
+  position:relative;
+}
+
+.carcaption {
+  position:absolute;
+  margin: 0 auto;
+  bottom: 32px;
+  left: 0;
+  right: 0; 
+  height:auto;
+  max-height: 22%;
+  max-width: 1100px;
+  width:auto;
+  background: linear-gradient(to right, #3b3b3b, #a0a0a0);
+  opacity: 0.5; 
+  font-family: Concert One, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.carcaption h5 {
+  font-size: 2em;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .carcaption h5 {font-size: 1.5em;}
+}
+
+@media (max-width: 576px) {
+  .carcaption h5 {font-size: 1em;}
+}
+
+.carcaption p {
+  font-size: 1.5em;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .carcaption p {font-size: 1em;}
+}
+
+@media (max-width: 576px) {
+  .carcaption p {font-size: 0.75em;}
+}
+
+.col-sm h2 {
+  text-align: center;
+}
+
+.col-sm {
+  text-align: justify;
+  padding-top: 2em;
+}
+
+/*work*/
+
+#work1, #work2 {
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+.col-xs-12 {
+  padding-bottom: 20px;
+}
+
+#work1 .img-fluid {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#work2 .img-fluid {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.info {
+  width: 100% !important;
+}
+
+/*image hover effects*/
+
+/*img increase size*/
+
+@media (max-width: 361px) {
+
+.container #work1 .img-fluid:hover {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+.info:hover {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+}
+
+
+/*.container #work2 .img-fluid {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+.container #work2 .img-fluid:hover {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+}*/
+
+/*img turn from grey to color*/
+#work1 .img-fluid {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+#work1 .img-fluid:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+} 
+
+/*img opacity*/
+#work2 .img-fluid {
+  -webkit-filter: opacity;
+  filter: opacity(0.75);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#work2 .img-fluid:hover {
+  -webkit-filter: opacity;
+  filter: opacity(1);
+}
+
+.info {
+  position: absolute;
+  top: 15%;
+  left: 22%;
+  color: #fff;
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.6;  
+  display: none;
+}
+
+.proj-title {
+  font-weight:100;
+}
+
+/*ABOUT*/
+* { box-sizing: border-box; }
+
+#works {
+ background: linear-gradient(to right, rgba(173, 216, 230, 0.5), rgba(230, 230, 250, 0.5)); 
+}
+
+#about {
+  background-image: url(../img/about1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.85  
+}
+
+#about figcaption {
+  font-family: Concert One, Helvetica, Arial, sans-serif;
+  font-size: 4em;
+  color:white;
+  font-weight: bolder;
+  text-align: center;
+  background-color: black;
+  opacity: 0.75;
+  padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .about-image figcaption {font-size: 3em;}
+}
+
+@media (max-width: 576px) {
+  .about-image figcaption {font-size: 2.5em;}
+}
+
+.main-text {
+  padding-top: 1em;
+  padding-bottom: 3em;
+  width:auto;
+  max-width: 100%;
+  margin: 0 auto;  
+  text-align: justify;
+  background-color: black;
+  opacity: 0.75;
+}
+
+.main-text h3 {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+.main-text p {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  font-size: 1.25em;
+  color: white;  
+  width: :auto;
+  max-width: 80%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.main-text span {
+  font-family: Orbitron,Comic Sans MS;
+  font-weight: bolder;
+}
+
+.embed-responsive-item {
+  width: auto;
+  max-width: 560px; 
+  max-height: 315px; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  margin: auto; 
+}
+
+.skill {
+  background-color:black;
+  opacity: 0.75;
+}
+
+.skill h3 {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+#batch img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+/*CONTACT*/
+
+#contact {
+ background: linear-gradient(to right, rgba(173, 216, 230, 0.5), rgba(230, 230, 250, 0.5));
+ position: relative;
+}
+
+#map1 { 
+ position: relative;  
+ height: 31.25em;
+ width:auto; 
+ max-width: 31.25em;
+}
+
+.contactbox {
+  width:auto;
+  max-width: 500px;
+  /*padding-left: 20%;*/
+}
+
+.email {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  font-size: 1em;
+  color: black;
+  width: 100%;
+}
+
+.email:hover {
+  text-decoration: none;   
+}
+
+.phone {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  font-size: 1em;
+  color: black;  
+}
+
+.address {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  font-size: 1em;
+  color: black;  
+  padding-bottom: 20px;
+}
+
+.col-md-7 {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 361px) {
+  #map1 { height: 250px;}} 
+
+
+
+label {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  font-weight: bolder;
+  color: black;
+}
+
+.form-control {
+  font-size: 0.9em;
+}
+
+.form-group-email label {
+  padding-top: 10px;
+}
+
+.form-group-message-box{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#message-box {
+  width: 100%;
+  height: 23em;
+}
+
+@media (max-width: 361px) {
+   #message-box {height: 250px;}}
+
+#submit-button {
+ font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+} 
+
+@media (max-width: 576px) {
+  form .form-group {
+  width: auto;
+  max-width: 100%;
+}}
+
+@media (max-width: 576px) {
+ form .contactbox {
+  padding-left: 0;
+}}
+
+/*FAQ*/
+.container-accordion {
+  margin: 0 auto;
+  width: auto;
+  max-width: 800px;
+  opacity: 0.75;
+  padding-bottom: 50px;
+ }
+
+.btn-link { 
+  font-size: 0.75em;
+  font-weight: 800;
+  color: #9FBBFF;
+  text-align: left;
+}
+
+.btn-link:hover {  
+  -webkit-transition: color 2000ms;
+  color: #4D2DFF;
+  font-weight: 900;
+}
+
+.btn-link:last-child {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.card-body {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+}
+
+/*Learn More Section*/
+
+.learn-more-section {
+  background: linear-gradient(to right, #003F87 , #00B2EE);
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+.learn-more-section h2 {
+  color: white;
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  .modal-button {
+    float: right;
+  }
+}
+
+#click-here {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-a-bootstrap-button {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  background-color: black;
+  color: white; 
+}
+
+#letter_of_recommendation {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.bd-example-modal h5 {
+  font-family: Concert One,ZCOOL QingKe HuangYou,Poppins,Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 361px) {
+  #click-here {
+    padding-bottom: 20px;
+  }
+}
+
+/*footer*/
+footer {
+  position: relative;
+  background-color: grey;
+  opacity: 0.95;
+  height: 100px;
+} 
+
+.twitterfb {
+  position: absolute;
+  left: 0;
+}
+
+.twitterfb iframe {
+  height: 1.5em;
+}
+
+.social-batches {
+  background-color: grey;
+  opacity: 0.95;
+  position: absolute;
+  right: 0;
+}
+
+.fa-twitter {
+  font-size: 2.5em;
+  color: #C6C6C6;
+}
+
+.fa-twitter:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+.fa-facebook-f {
+  font-size: 2.25em;
+  color: #C6C6C6;
+  padding-left: 0.4em;
+}
+
+.fa-facebook-f:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+.fa-instagram {
+  font-size: 2.7em;
+  color: #C6C6C6;  
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+.fa-instagram:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+.fa-youtube {
+  font-size: 2.7em;
+  color: #C6C6C6;  
+  background-color: grey;
+  padding: 0;
+  margin: 0;
+}
+
+.fa-youtube:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+@media (max-width: 360px) {
+
+.fa-twitter {
+  font-size: 2em;
+  color: #C6C6C6;
+}
+
+.fa-twitter:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+.fa-facebook-f {
+  font-size: 1.75em;
+  color: #C6C6C6;
+  padding-left: 0.4em;
+}
+
+.fa-facebook-f:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+.fa-instagram {
+  font-size: 2.2em;
+  color: #C6C6C6;  
+  padding-left: 0.4em;
+}
+
+.fa-instagram:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+.fa-youtube {
+  font-size: 2.2em;
+  color: #C6C6C6;  
+  padding-left: 0.4em;
+}
+
+.fa-youtube:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+}
+
+@media (max-width: 320px) {
+
+.fa-twitter {
+  font-size: 1.5em;
+  color: #C6C6C6;
+}
+
+.fa-twitter:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+.fa-facebook-f {
+  font-size: 1.25em;
+  color: #C6C6C6;
+  padding-left: 0.4em;
+}
+
+.fa-facebook-f:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+.fa-instagram {
+  font-size: 1.7em;
+  color: #C6C6C6;  
+  padding-left: 0.4em;
+}
+
+.fa-instagram:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+
+.fa-youtube {
+  font-size: 1.7em;
+  color: #C6C6C6;  
+  padding-left: 0.4em;
+}
+
+.fa-youtube:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+}
+}
+
+@media (max-width: 361px) {
+  .modal-body iframe {
+    width: 300px;
+  }
+}
+
+.copyright {
+ background-color: grey; 
+ opacity: 0.95;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+}
